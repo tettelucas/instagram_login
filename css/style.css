@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.page-site {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 32px;
+}
+
+@media screen and (max-width: 868px) {
+    .box-phone {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 935px;
+        margin: 0 auto;
+        padding-bottom: 32px;
+    }
+
+    .box-login {
+        width: 100%;
+        max-width: 350px;
+        min-width: 350px;
+        height: 625.15px;
+        margin: 0 auto;
+    }
+
+    .box-input {
+        width: 100%;
+        height: 395px;
+        background-color: #fff;
+        border: 1px solid #dbdbdb;
+        margin: 13px 0;
+        padding: 10px 0;
+    }
+
+    .box-logo {
+        width: 100%;
+        text-align: center;
+        padding: 35px 0;
+    }
+    
+    .inputs {
+        margin-top: -8px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .inputs form input {
+        width: 268px;
+        height: 39px;
+        margin: 5px 0;
+        background-color: #fafafa;
+        border: 1px solid #dbdbdb;
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 9px 0 7px 8px;
+        display: block;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    }
+
+    .inputs form button {
+        width: 268px;
+        height: 30px;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        margin: 10px 0;
+        border: none;
+        background-color: #0095f6;
+    }
+
+    .text-others {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .text-others div label {
+        font-family: arial;
+        font-weight: bold;
+        font-size: 12px;
+        color: #8e8e8e;
+    }
+
+    .text-others div label::before{
+        content: ' ';
+        position: absolute;
+        width: 100px;
+        border-top: 1px solid #ccc; 
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    .text-others div label::after {
+        content: ' ';
+        position: absolute;
+        width: 100px;
+        border-top: 1px solid #ccc;
+        margin-left: -140px;
+        margin-top: 10px;
+    }
+
+    .box-face {
+        justify-content: center;
+        display: flex;
+        margin-top: 22px;
+    }
+
+    .box-face div button {
+        width: 268px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .box-face div button img {
+        width: 16px;
+        float: left;
+        margin-left: 50px;
+    }
+
+    .box-face div button label {
+        margin-left: 10px;
+        color: #385185;
+        font-weight: bold;
+        letter-spacing: .5px;
+        float: left;
+    }
+
+    .box-reset {
+        justify-content: center;
+        display: flex;
+        margin-top: 14px;  
+    }
+
+    .box-reset div button {
+        border: none;
+        background: none;
+        font-size: 12px;
+        color: #00376b;
+        cursor: pointer;
+    }
+
+    .box-create {
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        border: 1px solid #dbdbdb;
+        padding-top: 20px;
+    }
+
+    .box-create div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-create div label {
+        color: #262626;
+        font-family: arial;
+        font-weight: normal;
+        font-size: 13px;
+        float: left;
+    }
+
+    .box-create div button {
+        font-family: arial;
+        border: none;
+        background: none;
+        color: #0095f6;
+        font-weight: bold;
+        margin-left: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        float: left;
+    }
+
+    .box-download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box-download .text-download {
+        display: flex;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .box-download .lojas-download {
+        display: flex;
+        justify-content: center;
+        align-items: center; flex-direction: row;
+    }
+
+    .lojas-download div img {
+        height: 40px;
+        margin: 20px 4px;
+        cursor: pointer;
+    }
+
+    .footer {
+        width: 98%;
+        height: 70px;
+        margin-left: 1%;
+        margin-top: 30px;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 869px) {
+    .container {
+        width: 100%;
+        max-width: 935px;
+        margin: 0 auto;
+        padding-bottom: 32px;
+    }
+    
+    .box-phone {
+        width: 42.5%;
+        min-width: 400px;
+        height: 625.15px;
+        margin-left: 8%;
+        float: left;
+    }
+
+    .cellphone {
+        height: 628px;
+        background-image: url('../assets/images/cellphone.png');
+        background-position: -35px 0;
+        background-size: 468.32px 634.15px;
+    }
+
+    .box-login {
+        width: 100%;
+        max-width: 350px;
+        min-width: 350px;
+        height: 625.15px;
+        margin-left: 2.5%;
+        float: left;
+    }
+
+    .box-input {
+        width: 100%;
+        height: 395px;
+        background-color: #fff;
+        border: 1px solid #dbdbdb;
+        margin: 13px 0;
+        padding: 10px 0;
+    }
+
+    .box-logo {
+        width: 100%;
+        text-align: center;
+        padding: 35px 0;
+    }
+    
+    .inputs {
+        margin-top: -8px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .inputs form input {
+        width: 268px;
+        height: 39px;
+        margin: 5px 0;
+        background-color: #fafafa;
+        border: 1px solid #dbdbdb;
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 9px 0 7px 8px;
+        display: block;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    }
+
+    .inputs form button {
+        width: 268px;
+        height: 30px;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        margin: 10px 0;
+        border: none;
+        background-color: #0095f6;
+    }
+
+    .text-others {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .text-others div label {
+        font-family: arial;
+        font-weight: bold;
+        font-size: 12px;
+        color: #8e8e8e;
+    }
+
+    .text-others div label::before{
+        content: ' ';
+        position: absolute;
+        width: 100px;
+        border-top: 1px solid #ccc; 
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    .text-others div label::after {
+        content: ' ';
+        position: absolute;
+        width: 100px;
+        border-top: 1px solid #ccc;
+        margin-left: -140px;
+        margin-top: 10px;
+    }
+
+    .box-face {
+        justify-content: center;
+        display: flex;
+        margin-top: 22px;
+    }
+
+    .box-face div button {
+        width: 268px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .box-face div button img {
+        width: 16px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 2px;
+    }
+
+    .box-face div button label {
+        margin-left: 10px;
+        color: #385185;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: .2px;
+        margin-top: 2px;
+        float: left;
+    }
+
+    .box-reset {
+        justify-content: center;
+        display: flex;
+        margin-top: 14px;  
+    }
+
+    .box-reset div button {
+        border: none;
+        background: none;
+        font-size: 12px;
+        color: #00376b;
+        cursor: pointer;
+    }
+
+    .box-create {
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        border: 1px solid #dbdbdb;
+        padding-top: 20px;
+    }
+
+    .box-create div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-create div label {
+        color: #262626;
+        font-family: arial;
+        font-weight: normal;
+        font-size: 13px;
+        float: left;
+    }
+
+    .box-create div button {
+        font-family: arial;
+        border: none;
+        background: none;
+        color: #0095f6;
+        font-weight: bold;
+        margin-left: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        float: left;
+    }
+
+    .box-download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box-download .text-download {
+        display: flex;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .box-download .lojas-download {
+        display: flex;
+        justify-content: center;
+        align-items: center; flex-direction: row;
+    }
+
+    .lojas-download div img {
+        height: 40px;
+        margin: 20px 4px;
+        cursor: pointer;
+    }
+} 
+
+.footer {
+    width: 98%;
+    height: 140px;
+    margin-left: 1%;
+    margin-top: 30px;
+    float: left;
+}
+
+.footer .box-1,
+.footer .box-2,
+.footer .box-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .box-1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .box-1 div button,
+.footer .box-2 div button {
+    border: none;
+    background: none;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+.footer .box-3 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.footer .box-3 div select {
+    border: none;
+    background: none;
+}
